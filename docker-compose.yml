@@ -1,0 +1,7 @@
+services:
+  cyberpunk-site:
+    build: .
+    container_name: cyberpunk-site
+    restart: unless-stopped
+    ports:
+      - "80:5000"
