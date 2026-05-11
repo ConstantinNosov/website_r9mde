@@ -1,32 +1,107 @@
-<section class="hero card fade-up">
-    <h1 class="title">R9MDE</h1>
-    <h1 class="title">Constantin Nosov</h1>
-</section>
+<!DOCTYPE html>
+<html lang="ru">
 
-<section class="card fade-up">
-    <h2>О станции: </h2>
-    <p><strong>QTH:</strong> Russia, Omsk, MO64OW</p>
-    <p><strong>Режимы работы:</strong> HF / VHF / UHF / FT-8</p>
-    <p><strong>Оборудование:</strong> Yaesu FT-891, Yaesu FT-2800M, USDX</p>
-</section>
+<head>
+    <meta charset="UTF-8">
 
-<section class="card fade-up">
-    <h1>Связь со мной:</h1>
-    <h2>Email: constantinnosov@yandex.ru</h2>
-</section>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<section class="card fade-up">
-    <div class="gallery">
-        <img src="static/img/QSL1.jpg" alt="QSL card">
+    <title>R9MDE</title>
 
-    </div>
-</section>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
 
-<section class="card fade-up qsl">
-    <h2>QSL / 73</h2>
+<body>
 
-    <p>
-        Спасибо за посещение моей страницы,
-        73 и удачных DX-связей!
-    </p>
-</section>
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero card">
+
+        <h1 class="title">R9MDE</h1>
+
+        <h2 class="subtitle">
+            Constantin Nosov
+        </h2>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="card">
+
+        <h2>О станции</h2>
+
+        <p>
+            <strong>QTH:</strong>
+            Russia, Omsk, MO64OW
+        </p>
+
+        <p>
+            <strong>Режимы работы:</strong>
+            HF / VHF / UHF / FT-8
+        </p>
+
+        <p>
+            <strong>Оборудование:</strong>
+            Yaesu FT-891,
+            Yaesu FT-2800M,
+            uSDX
+        </p>
+
+    </section>
+
+    <!-- CONTACTS -->
+
+    <section class="card">
+
+        <h2>Связь со мной</h2>
+
+        <ul class="contacts">
+
+            <li>
+                Email:
+                constantinnosov@yandex.ru
+            </li>
+
+        </ul>
+
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="card">
+
+        <h2>QSL Card</h2>
+
+        <div class="gallery">
+
+            <img
+                src="{{ url_for('static', filename='img/QSL1.jpg') }}"
+                alt="QSL Card"
+            >
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <section class="card qsl">
+
+        <h2>QSL / 73</h2>
+
+        <p>
+            73 и удачных DX-связей!
+        </p>
+
+    </section>
+
+</main>
+
+</body>
+
+</html>
