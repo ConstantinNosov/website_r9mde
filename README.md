@@ -5,6 +5,6 @@ python3 app.py
 http://localhost:5000
 
 Запуск через Docker:
-docker compose up -d --build
+docker-compose up -d --build
 Сайт будет доступен:
 http://0.0.0.0
